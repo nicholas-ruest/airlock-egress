@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "workload": {
+    "name": "evaluation-runner",
+    "namespace": "airlock",
+    "service_account": "evaluation-runner"
+  },
+  "expires_at": "2030-01-01T00:00:00Z",
+  "limits": {
+    "max_requests": 3,
+    "max_bytes": 4096
+  },
+  "destinations": [
+    {
+      "host": "artifacts.example.com",
+      "protocol": "https",
+      "ports": [443],
+      "methods": ["GET"],
+      "path_prefixes": ["/public/"]
+    },
+    {
+      "host": "*.telemetry.example.com",
+      "protocol": "https",
+      "ports": [443],
+      "methods": ["POST"],
+      "path_prefixes": ["/v1/traces"]
+    }
+  ]
+}

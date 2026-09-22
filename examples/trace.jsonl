@@ -1,0 +1,3 @@
+{"at":"2026-09-21T21:30:00-04:00","method":"GET","url":"https://artifacts.example.com/public/model.json","bytes":1024}
+{"at":"2026-09-21T21:30:01-04:00","method":"POST","url":"https://run-42.telemetry.example.com/v1/traces","bytes":2048}
+{"at":"2026-09-21T21:30:02-04:00","method":"POST","url":"https://evil.example.net/upload","bytes":512}
